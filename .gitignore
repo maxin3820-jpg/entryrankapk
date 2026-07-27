@@ -86,6 +86,9 @@ Thumbs.db
 # Kotlin
 *.kotlin_module
 
-# Gradle wrapper (we keep this)
+# Gradle wrapper (we keep this - must commit these!)
 !gradle/wrapper/gradle-wrapper.jar
 !gradle/wrapper/gradle-wrapper.properties
+
+# Force include gradle wrapper jar
+!gradle-wrapper.jar
