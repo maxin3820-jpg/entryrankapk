@@ -53,12 +53,6 @@ interface QuestionDao {
     @Query("""
         SELECT * FROM questions 
         WHERE id IN (:questionIds)
-        ORDER BY 
-            CASE 
-                WHEN id = :questionIds[0] THEN 0
-                WHEN id = :questionIds[1] THEN 1
-                ELSE 2
-            END
     """)
     suspend fun getQuestionsByIds(questionIds: List<String>): List<QuestionEntity>
     
